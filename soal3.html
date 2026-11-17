@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cakipunk store</title>
+    <link rel="stylesheet" href="soal3.css">
+</head>
+<body>
+
+    <header>
+        <h1>cakipunk store</h1>
+    </header>
+
+    <section class="produk">
+
+        <article class="produk">
+            <div class="gambar"><img src="img/mowhawk.jpg" alt="mohawk balaclava"></div>
+            <h3>mohawk balaclava</h3>
+            <div class="harga-box">Rp 300.000</div>
+        </article>
+
+        <article class="produk">
+            <div class="gambar"><img src="img/devil.jpg" alt="devil balaclava"></div>
+            <h3>devil balaclava</h3>
+            <div class="harga-box">Rp 320.000</div>
+        </article>
+
+        <article class="produk">
+            <div class="gambar"><img src="img/punk.jpg" alt="punk balaclava"></div>
+            <h3>punk balaclava</h3>
+            <div class="harga-box">Rp 350.000</div>
+        </article>
+    </section>
+
+    <form id="formPesan" action="#" method="get">
+
+        <h2>Form Pemesanan</h2>
+
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"
+        required minlength=" 3" maxlength="50">
+
+        <label for="hp">Nomor HP:</label>
+        <input type="tel" id="hp" name="hp"
+        required pattern="[0-9]{10,13}"
+        title="Isi 10 sampai 13 angka">
+
+        <label for="produk">Produk:</label>
+        <select id="produk" name="produk" required>
+            <option value="">-- Pilih --</option>
+            <option value="Kemeja">mohawk balaclava</option>
+            <option value="Kaos">devil balaclava</option>
+            <option value="Hodie">punk balaclava</option>
+        </select>
+
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah"
+        required min="1" max="20">
+
+        <label>Metode Bayar:</label>
+
+        <div class="radio">
+            <input type="radio" id="transfer"
+            name="bayar" value="Transfer" required>
+            <label for="transfer">Transfer</label>
+
+            <input type="radio" id="cod"
+            name="bayar" value="COD">
+            <label for="cod">COD</label>
+
+            <input type="radio" id="Qris"
+            name="bayar" value="Qris">
+            <label for="Qris">Qris</label>
+        </div>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat"
+        required minlength="10" maxlength="200"></textarea>
+
+        <button type="submit">Pesan</button>
+
+        <p class="pesan">halo</p>
+
+    </form>
+
+    <footer>
+        <p>Kontak Toko: 081234567890</p>
+    </footer>
+
+</body>
+</html>
